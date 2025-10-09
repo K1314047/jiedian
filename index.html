@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>G.Ark 节点列表</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #2c3e50;
+    }
+    header p {
+      margin: 5px 0 0;
+      color: #666;
+      font-size: 1rem;
+    }
+    #refresh-btn {
+      display: inline-block;
+      margin: 10px auto 30px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    #refresh-btn:hover {
+      background-color: #2980b9;
+    }
+    .node-list {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .node-item {
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .node-item:last-child {
+      border-bottom: none;
+    }
+    .node-info {
+      flex: 1 1 70%;
+      min-width: 250px;
+    }
+    .node-title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+      color: #34495e;
+    }
+    .node-protocol {
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      margin-bottom: 6px;
+    }
+    .node-link {
+      font-family: monospace;
+      font-size: 0.85rem;
+      word-break: break-all;
+      background: #ecf0f1;
+      padding: 6px 8px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      user-select: text;
+    }
+    .node-meta {
+      font-size: 0.85rem;
+      color: #95a5a6;
+    }
+    .copy-btn {
+      flex: 0 0 100px;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+      margin-left: 15px;
+      white-space: nowrap;
+    }
+    .copy-btn:hover {
+      background-color: #1e8449;
+    }
+    @media (max-width: 600px) {
+      .node-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .copy-btn {
+        margin-left: 0;
+        margin-top: 8px;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>G.Ark</h1>
+    <p>不定时更新 节点投稿: <a href="mailto:1314047@Gmail.com">1314047@Gmail.com</a></p>
+    <button id="refresh-btn" title="刷新页面">刷新</button>
+  </header>
+
+  <section class="node-list" aria-label="节点列表">
+    <!-- 节点条目将由 JS 动态生成 -->
+  </section>
+
+  <script>
+    const nodeListEl = document.querySelector('.node-list');
+
+    function createNodeItem(node) {
+      const item = document.createElement('article');
+      item.className = 'node-item';
+
+      const info = document.createElement('div');
+      info.className = 'node-info';
+
+      const title = document.createElement('h3');
+      title.className = 'node-title';
+      title.textContent = node.title;
+      info.appendChild(title);
+
+      const protocol = document.createElement('div');
+      protocol.className = 'node-protocol';
+      protocol.textContent = `协议: ${node.protocol}`;
+      info.appendChild(protocol);
+
+      const link = document.createElement('div');
+      link.className = 'node-link';
+      link.textContent = node.link;
+      info.appendChild(link);
+
+      const meta = document.createElement('div');
+      meta.className = 'node-meta';
+      meta.textContent = `添加时间: ${node.added}`;
+      info.appendChild(meta);
+
+      const copyBtn = document.createElement('button');
+      copyBtn.className = 'copy-btn';
+      copyBtn.textContent = '复制';
+      copyBtn.setAttribute('aria-label', `复制节点链接: ${node.title}`);
+      copyBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(node.link).then(() => {
+          copyBtn.textContent = '已复制';
+          setTimeout(() => {
+            copyBtn.textContent = '复制';
+          }, 1500);
+        }).catch(() => {
+          alert('复制失败，请手动复制');
+        });
+      });
+
+      item.appendChild(info);
+      item.appendChild(copyBtn);
+
+      return item;
+    }
+
+    function renderNodes(nodes) {
+      nodeListEl.innerHTML = '';
+      nodes.forEach(node => {
+        nodeListEl.appendChild(createNodeItem(node));
+      });
+    }
+
+    async function loadNodes() {
+      try {
+        const response = await fetch('nodes.json');
+        if (!response.ok) throw new Error('网络错误，加载节点失败');
+        const nodes = await response.json();
+        renderNodes(nodes);
+      } catch (error) {
+        nodeListEl.innerHTML = `<p style="color:red; text-align:center;">加载节点失败：${error.message}</p>`;
+      }
+    }
+
+    document.getElementById('refresh-btn').addEventListener('click', () => {
+      loadNodes();
+    });
+
+    // 页面加载时初始化
+    loadNodes();
+  </script>
+</body>
+</html>

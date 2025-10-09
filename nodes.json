@@ -1,0 +1,32 @@
+[
+  {
+    "title": "v2ray订阅 Github @v2rayfree<侵删>",
+    "protocol": "tuic",
+    "link": "https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v2",
+    "added": "2025/10/7 12:51:37"
+  },
+  {
+    "title": "IPV6小鸡TUIC 理解 @caanyying 佬友分享<侵删>",
+    "protocol": "tuic",
+    "link": "tuic://c44e5941-82a3-41d8-8b77-65df629aab4a%3Ac44e5941-82a3-41d8-8b77-65df629aab4a@[2001:470:1f18:7c::29]:60604?sni=www.bing.com&alpn=h3&congestion_control=bbr#LinuxDo@caanyying",
+    "added": "2025/10/7 09:35:37"
+  },
+  {
+    "title": "IPV6小鸡Hy2 歇斯底里 @caanyying 佬友分享<侵删>",
+    "protocol": "hysteria2",
+    "link": "hysteria2://c44e5941-82a3-41d8-8b77-65df629aab4a@[2001:470:1f18:7c::29]:30168?sni=www.bing.com&alpn=h3&insecure=1#LinuxDo@caanyying",
+    "added": "2025/10/7 09:34:42"
+  },
+  {
+    "title": "土耳其Hy2 歇斯底里 佬友分享<侵删>",
+    "protocol": "hysteria2",
+    "link": "hysteria2://09fceaf1-5813-4745-b8ad-725fc5a8c426@46.203.248.72:50443?alpn=h3&insecure=1#LinuxDo@ZSF",
+    "added": "2025/10/7 09:31:00"
+  },
+  {
+    "title": "波兰家宽Hy2 歇斯底里 大口机 佬友分享<侵删>",
+    "protocol": "hysteria2",
+    "link": "hysteria2://P51fCW7FQzJBXyuTbn8p7AyE@83.168.90.27:40443?insecure=1#LinuxDo@ZSF",
+    "added": "2025/10/7 08:57:56"
+  }
+]
