@@ -1,5 +1,13 @@
 [
   {
+    "title": "V2ray  Nodeloc@kelala123<侵删>",
+    "protocol": "Trojan",
+    "link": "trojan://e735d5a4-c4f9-46fc-97e8-39a4024a5b8b@baigou1.kkieo555.cn:21869?security=tls&sni=douyin.com&allowInsecure=1&type=tcp&headerType=none#%E6%97%A5%E6%9C%AC%E5%9B%9B%20isp%20%E8%A7%A3%E9%94%81openai
+trojan://e735d5a4-c4f9-46fc-97e8-39a4024a5b8b@baigou1.kkieo555.cn:21878?security=tls&sni=douyin.com&allowInsecure=1&type=tcp&headerType=none#%E5%8F%B0%E6%B9%BE%E4%B8%80%20isp%20%E8%A7%A3%E9%94%81openai
+trojan://e735d5a4-c4f9-46fc-97e8-39a4024a5b8b@baigou1.kkieo555.cn:21863?security=tls&sni=douyin.com&allowInsecure=1&type=tcp&headerType=none#%E9%A6%99%E6%B8%AF%E9%AB%98%E9%80%9F1",
+    "added": "2025/10/25 22:21:28"
+  },
+  {
     "title": "V2ray  LinuxDo@helloworld<侵删>",
     "protocol": "URL",
     "link": "https://v1.mk/3lgJqIH",
