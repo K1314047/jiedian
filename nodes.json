@@ -1,12 +1,27 @@
 [
  {
-    "title": "V2ray  LinuxDO@luozuo_luozuo<侵删>",
-    "protocol": "Trojan",
+    "title": "日本家宽IP LinuxDO@kljjiajia<侵删>",
+    "protocol": "Vless",
+    "link": "vmess://eyJhZGQiOiI2MS4xMjAuOS4yMCIsImFpZCI6IjY0IiwiaG9zdCI6IiIsImlkIjoiZjgxNDQzYjItY2EwNi1kYjRmLWE3MDYtMzhjZTFiYzFkOTg3IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIzODYxNiIsInBzIjoiSlAsIENoaXlvZGEgQ2l0eSAtICh2bWVzcykiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
+vmess://eyJhZGQiOiI2MS4xMjAuOS4yMCIsImFpZCI6IjY0IiwiaG9zdCI6IiIsImlkIjoiOTEyN2I2NTItYWQyNy01MDA2LTA3ZmEtYTM2OWQxZDUwNDY5IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiI0MjYwMCIsInBzIjoiSlAsIENoaXlvZGEgQ2l0eSAtICh2bWVzcykiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
+vmess://eyJhZGQiOiIyMTAuMjMwLjIwNi4yMyIsImFpZCI6IjY0IiwiaG9zdCI6IiIsImlkIjoiMWQyNDhlM2YtYjZhOS0yYjkzLTdiYTUtYjNhNGY2ZWQwODVjIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIzOTkzMyIsInBzIjoiSlAsIENoaXlvZGEgQ2l0eSAtICh2bWVzcykiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
+vmess://eyJhZGQiOiIyMTAuMjMwLjIwNi4yMyIsImFpZCI6IjY0IiwiaG9zdCI6IiIsImlkIjoiNDMyNWJkYTQtMTBmMS00OTNkLTJmMjItMGVmODM3MmU1NjI1IiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIzODg5OCIsInBzIjoiSlAsIENoaXlvZGEgQ2l0eSAtICh2bWVzcykiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
+vmess://eyJhZGQiOiIyMTAuMjMwLjIwNi4yNCIsImFpZCI6IjY0IiwiaG9zdCI6IiIsImlkIjoiMWQyNDhlM2YtYjZhOS0yYjkzLTdiYTUtYjNhNGY2ZWQwODVjIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIzOTkzMyIsInBzIjoiSlAsIENoaXlvZGEgQ2l0eSAtICh2bWVzcykiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6IiIsInYiOiIyIn0=
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphZjYyNjYxMy05ZTliLTBhNjEtZDZiNi1lMTY1ZGMyMTEyMDY=@61.120.9.20:46546#JP,%20Chiyoda%20City%20-%20(shadowsocks)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmZDAzMWY5NS1hZDFmLWI1YTktZDY0NS01ZGUwZDk3YTBlMTQ=@61.120.9.20:37786#JP,%20Chiyoda%20City%20-%20(shadowsocks)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTowMjE1NGE3Mi1kODE4LTEwZmMtZjYzYy05ZWIwMmE3ZDZlMjk=@210.230.206.23:46816#JP,%20Chiyoda%20City%20-%20(shadowsocks)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozN2M4M2QwYS05YjM4LTdhYWYtZTdkYy0zMjE0ZGUyZWNhYTk=@210.230.206.23:46511#JP,%20Chiyoda%20City%20-%20(shadowsocks)
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTowMjE1NGE3Mi1kODE4LTEwZmMtZjYzYy05ZWIwMmE3ZDZlMjk=@210.230.206.24:46816#JP,%20Chiyoda%20City%20-%20(shadowsocks)",
+    "added": "2025/11/10 20:16:52"
+  },
+ {
+    "title": "美国Vless LinuxDO@luozuo_luozuo<侵删>",
+    "protocol": "Vless",
     "link": "vless://b02ea0a1-7485-4b81-b6d9-c670a2dc8f99@198.2.251.111:26129?encryption=none&security=reality&flow=xtls-rprx-vision&type=tcp&sni=aws.amazon.com&pbk=5N5K8oHDAiN23svc_KlSC5xhnYoNvcEWXHtr7ECh-H8&fp=chrome#233boy-reality-198.2.251.111",
     "added": "2025/10/26 10:46:28"
   },
   {
-    "title": "V2ray  LinuxDo@helloworld<侵删>",
+    "title": "Vmess订阅  LinuxDo@helloworld<侵删>",
     "protocol": "URL",
     "link": "https://v1.mk/3lgJqIH",
     "added": "2025/10/24 10:20:12"
